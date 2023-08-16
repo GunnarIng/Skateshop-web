@@ -68,7 +68,9 @@ header {
   justify-content: center;
 }
 .products > .product-card:last-child {
+  margin: 40px;
   margin-right: auto;
+  
 }
 
 .product-card {
@@ -86,6 +88,7 @@ h3 {
 
 .product-info {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
