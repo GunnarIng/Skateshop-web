@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Open+Sans&family=REM:wght@300;400&display=swap');
 
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ header {
   font-family: 'REM', sans-serif;
   width: 100%;
   background-color: #4a4a4a;
-  height: 136px;
+  height: 130px;
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +33,7 @@ header {
 
 .links {
   display: flex;
+  color: white;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -54,10 +56,8 @@ header {
 
 #heroimg {
   width: 100%;
-  max-height: 700px;
 }
-.main {
-}
+
 
 .products {
   display: flex;
@@ -66,6 +66,9 @@ header {
   margin: 40px auto;
   gap: 50px;
   justify-content: center;
+}
+.products > .product-card:last-child {
+  margin-right: auto;
 }
 
 .product-card {
@@ -76,8 +79,10 @@ header {
   width: 100%;
 }
 
-h2 {
-  margin: 5px;
+h3 {
+  margin: 10px;
+  font-family: 'open sans', sans-serif;
+  font-weight: 800;
 }
 
 .product-info {
@@ -87,6 +92,33 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+.contact {
+  background-color: #DB9D2C;
+  height: 200px;
+}
+
+.contact h1 {
+  display: flex;
+  font-family: 'open sans', sans-serif;
+  font-weight: 800;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.offer {
+  width: 400px;
+justify-content: center;}
+
+offer h1 {
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* MediaQuerries */
 
 @media (width <= 1080px) {
   .products {
