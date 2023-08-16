@@ -53,6 +53,7 @@ header {
 
 .cart img {
   width: 45px;
+  margin-right: 20px;
 }
 
 #heroimg {
@@ -68,9 +69,9 @@ header {
   justify-content: center;
 }
 .products > .product-card:last-child {
-  margin: 40px;
+  /* margin-left: auto; */
   margin-right: auto;
-  
+  justify-self: center;
 }
 
 .product-card {
@@ -94,7 +95,7 @@ h3 {
 }
 
 footer {
-  background-color: #db9d2c;
+  background-color:  #9C6114;
   display: flex;
   padding-top: 70px;
   width: 100%;
@@ -102,14 +103,6 @@ footer {
   flex-direction: column;
   
 }
-
-.contact-info{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-
-}
-
 footer h1 {
   display: flex;
   font-family: 'Open Sans', sans-serif;
@@ -118,13 +111,26 @@ footer h1 {
   justify-content: center;
 }
 
+.contact-info{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+
+}
+
+
 .offer {
   width: 450px;
   display: flex;
   gap: 20px;
   flex-direction: column;
-  margin-left: 50px;
+  align-items: center;
   justify-content: center;
+}
+.contact-info img {
+ width: 250px;
+
 }
 
 .offer h1 {
@@ -141,6 +147,7 @@ footer h1 {
 
 .input {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
@@ -150,6 +157,7 @@ footer h1 {
 .adress {
   font-family: 'Frank Ruhl Libre', serif;
   font-size: 18px;
+  margin-left: 140px;
 
 }
 
