@@ -3,64 +3,59 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Frank Ruhl Libre', serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'REM', sans-serif;
 }
 
-
-
-header {
+.upper-header {
   font-family: 'REM', sans-serif;
-  width: 100%;
   background-color: #4a4a4a;
-  height: 130px;
+ 
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.beaver-logo {
+  width: 80px;
+  padding: 10px;
 }
 
 .logo {
-  position: relative;
-  top: 15px;
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
   align-items: center;
 }
 
 .logo img {
-  width: 500px;
-  height: 100%;
+  width: 300px;
 }
 
 .links {
-  display: flex;
+  background-color: #4a4a4a;
   color: white;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 15px;
-  gap: 100px;
+  
+  display: none;
 }
 
 .right-section {
   display: flex;
   justify-content: end;
   align-items: center;
-  position: relative;
-  bottom: 20px;
   right: 20px;
+  width: 80px;
 }
 
 .cart img {
-  width: 45px;
-  margin-right: 20px;
+  width: 30px;
+padding-right: 20px;
 }
 
-
 .bars img {
-  width: 45px;
+  width: 30px;
   margin-right: 20px;
-  display: none;
 }
 
 #heroimg {
@@ -74,11 +69,6 @@ header {
   margin: 40px auto;
   gap: 50px;
   justify-content: center;
-}
-.products > .product-card:last-child {
-  /* margin-left: auto; */
-  margin-right: auto;
-  justify-self: center;
 }
 
 .product-card {
@@ -102,30 +92,31 @@ h3 {
 }
 
 footer {
-  background-color:  #9C6114;
+  background-color: #db9d2c;
   display: flex;
+  color: white;
   padding-top: 70px;
-  width: 100%;
   align-content: center;
   flex-direction: column;
-  
 }
 footer h1 {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;  
+  font-weight: 800;
   align-items: center;
   justify-content: center;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  
-
+  flex-direction: row;
 }
 
+.contact-info img {
+  width: 100px;
+}
 
 .offer {
   width: 450px;
@@ -135,12 +126,9 @@ footer h1 {
   align-items: center;
   justify-content: center;
 }
-.contact-info img {
- width: 250px;
 
-}
 
-.offer h1 {
+.offer h2 {
   display: flex;
   margin: 0;
   padding: 0;
@@ -151,6 +139,7 @@ footer h1 {
   justify-content: center;
   text-align: center;
 }
+
 
 .input {
   display: flex;
@@ -164,15 +153,10 @@ footer h1 {
 .adress {
   font-family: 'Frank Ruhl Libre', serif;
   font-size: 18px;
-  margin-left: 140px;
-
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.map {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-}
 
 input {
   width: 250px;
@@ -200,7 +184,6 @@ button {
   font-weight: 800;
   background-color: #4a4a4a;
   justify-content: space-evenly;
-  
 }
 .links-container h4 {
   text-decoration: underline;
@@ -228,12 +211,49 @@ button {
   align-items: end;
 }
 
-
-
 /* MediaQuerries */
 
-@media (width <= 1080px) {
+@media (width >= 1080px) {
   .products {
     gap: 0px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 10px;
+  }
+
+  .logo img {
+    width: 400px;
+  }
+
+}
+
+@media (width <= 540px) {
+  .logo img {
+    width: 200px;
+  }
+
+  .beaver-logo {
+    width: 50px;
+  }
+
+  .cart img {
+    width: 20px;
+  }
+
+  .bars img {
+    width: 20px;
+  }
+
+  .links-container h4, .links-container span  {
+    font-size: 12px;
   }
 }
