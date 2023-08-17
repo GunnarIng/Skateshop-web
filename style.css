@@ -94,7 +94,6 @@ h3 {
 footer {
   background-color: #db9d2c;
   display: flex;
-  color: white;
   padding-top: 70px;
   align-content: center;
   flex-direction: column;
@@ -178,6 +177,7 @@ button {
 }
 
 .links-container {
+  color: white;
   display: flex;
   flex-direction: row;
   height: 200px;
